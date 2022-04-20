@@ -17,15 +17,15 @@ spring:
     alibaba:
       seata:
         # 与seata配置文件中 config/file.config中配置的service相同
-        tx-service-group: xiangjiao_tx_group
+        tx-service-group: cl_tx_group
     nacos:
       discovery:
         server-addr: localhost:8848
   datasource:
-    url: jdbc:mysql://192.168.99.100:3306/seata_account?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://127.0.0.1:3306/seata_account?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=utf-8
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: Linkpower86@#!)
+    password: 123456
 
 ## 监控相关
 management.endpoints.web.exposure.include: '*'
